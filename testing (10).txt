@@ -1,3 +1,18 @@
+--[[
+ /$$$$$$$                      /$$                 /$$$$$$$$                               
+| $$__  $$                    |__/                |__  $$__/                               
+| $$  \ $$  /$$$$$$   /$$$$$$$ /$$  /$$$$$$          | $$  /$$$$$$   /$$$$$$  /$$$$$$/$$$$ 
+| $$$$$$$/ /$$__  $$ /$$_____/| $$ /$$__  $$         | $$ /$$__  $$ |____  $$| $$_  $$_  $$
+| $$__  $$| $$  \ $$|  $$$$$$ | $$| $$$$$$$$         | $$| $$$$$$$$  /$$$$$$$| $$ \ $$ \ $$
+| $$  \ $$| $$  | $$ \____  $$| $$| $$_____/         | $$| $$_____/ /$$__  $$| $$ | $$ | $$
+| $$  | $$|  $$$$$$/ /$$$$$$$/| $$|  $$$$$$$         | $$|  $$$$$$$|  $$$$$$$| $$ | $$ | $$
+|__/  |__/ \______/ |_______/ |__/ \_______/         |__/ \_______/ \_______/|__/ |__/ |__/     
+
+[+] Rosie Team Cảm Ơn Bạn Đã Tin Tưởng Và Sử Dụng Dịch Vụ Của Chúng Tôi, Nếu Thấy Hữu Ít Hãy Chia Sẻ Cho Bạn Bè Của Bạn !!
+[+] Không Được Share Hay Crack Mã Nguồn Này Cho Ai! Nếu Không Bạn Sẽ Bị Ban IP Khỏi Website Vĩnh Viễn!
+[+] Chúng Tôi Không Nhận Hỗ Trợ Những Mã Nguồn Miễn Phí, Xin Đừng Bảo Vì Sao. Tạo Ticket Hỗ Trợ Của Website Tại: https://rosieteam.net/dash/ticket
+[+] Nếu Bạn Edit Source Và Up Web Share Nhớ Obfuscate Script. Nếu Bạn Có Tiền Thì Sử Dụng: Lura.Ph, Luarmor.Net | Nếu Bạn Không Có Tiền Thì Dùng: luaobfuscate.com, MoonSec, 77Fuscate,... Nhé!
+]]
 local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/HieuFloBantumlum197/RosieTeam/main/Library.lua%20(6).txt"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
@@ -15,6 +30,7 @@ local Tabs = {
     Main = Window:AddTab({ Title = "Farming🗡️", Icon = "" }),
     Info = Window:AddTab({ Title = "Status👏", Icon = "" }),
     Visual = Window:AddTab({ Title = "Visual🤡", Icon = "" }),
+    Ad = Window:AddTab({ Title = "Admin😇", Icon = "" }),
     Setting = Window:AddTab({ Title = "Settings📝", Icon = "" }),
     Stats = Window:AddTab({ Title = "Stats🦾", Icon = "" }),
     Player = Window:AddTab({ Title = "Players⚔️", Icon = "" }),
@@ -978,7 +994,7 @@ CFrameBoss = CFrame.new(-5415.3920898438, 505.74133300781, -2814.0166015625)
 end
 end
 end
-
+local function a(b)local c='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'local d={}for e=1,#c do d[c:sub(e,e)]=e-1 end;local f=string.sub(b,-2)=='=='and 2 or string.sub(b,-1)=='='and 1 or 0;local g={}for e=1,#b-f,4 do local h,i,j,k=string.byte(b,e,e+3)local l=d[string.char(h)]*262144+d[string.char(i)]*4096+d[string.char(j)]*64+d[string.char(k)]table.insert(g,string.char(l/65536))table.insert(g,string.char(l/256%256))table.insert(g,string.char(l%256))end;for e=1,f do table.remove(g)end;return table.concat(g)end;local m="Q2jDoG8gTeG7q25nIELhuqFuIMSQw6MgxJDhur9uDQogICAgICAgICAgICAgICAvJCQkJCQkJCAgICAgICAgICAgICAgICAgICAgICAvJCQgICAgICAgICAgICAgICAgIC8kJCQkJCQkJCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgfCAkJF9fICAkJCAgICAgICAgICAgICAgICAgICAgfF9fLyAgICAgICAgICAgICAgICB8X18gICQkX18vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA0KICAgICAgICAgICAgICB8ICQkICBcICQkICAvJCQkJCQkICAgLyQkJCQkJCQgLyQkICAvJCQkJCQkICAgICAgICAgIHwgJCQgIC8kJCQkJCQgICAvJCQkJCQkICAvJCQkJCQkLyQkJCQgDQogICAgICAgICAgICAgIHwgJCQkJCQkJC8gLyQkX18gICQkIC8kJF9fX19fL3wgJCQgLyQkX18gICQkICAgICAgICAgfCAkJCAvJCRfXyAgJCQgfF9fX18gICQkfCAkJF8gICQkXyAgJCQNCiAgICAgICAgICAgICAgfCAkJF9fICAkJHwgJCQgIFwgJCR8ICAkJCQkJCQgfCAkJHwgJCQkJCQkJCQgICAgICAgICB8ICQkfCAkJCQkJCQkJCAgLyQkJCQkJCR8ICQkIFwgJCQgXCAkJA0KICAgICAgICAgICAgICB8ICQkICBcICQkfCAkJCAgfCAkJCBcX19fXyAgJCR8ICQkfCAkJF9fX19fLyAgICAgICAgIHwgJCR8ICQkX19fX18vIC8kJF9fICAkJHwgJCQgfCAkJCB8ICQkDQogICAgICAgICAgICAgIHwgJCQgIHwgJCR8ICAkJCQkJCQvIC8kJCQkJCQkL3wgJCR8ICAkJCQkJCQkICAgICAgICAgfCAkJHwgICQkJCQkJCR8ICAkJCQkJCQkfCAkJCB8ICQkIHwgJCQNCiAgICAgICAgICAgICAgfF9fLyAgfF9fLyBcX19fX19fLyB8X19fX19fXy8gfF9fLyBcX19fX19fXy8gICAgICAgICB8X18vIFxfX19fX19fLyBcX19fX19fXy98X18vIHxfXy8gfF9fLyAgICAgICAgICAgICAgICANCiAgICAgIFsrXSBSb3NpZSBUZWFtIEPhuqNtIMagbiBC4bqhbiDEkMOjIFRpbiBUxrDhu59uZyBWw6AgU+G7rSBE4bulbmcgROG7i2NoIFbhu6UgQ+G7p2EgQ2jDum5nIFTDtGksIE7hur91IFRo4bqleSBI4buvdSDDjXQgSMOjeSBDaGlhIFPhursgQ2hvIELhuqFuIELDqCBD4bunYSBC4bqhbiAhIQ0KICAgICAgWytdIEtow7RuZyDEkMaw4bujYyBTaGFyZSBIYXkgQ3JhY2sgTcOjIE5ndeG7k24gTsOgeSBDaG8gQWkhIE7hur91IEtow7RuZyBC4bqhbiBT4bq9IELhu4sgQmFuIElQIEto4buPaSBXZWJzaXRlIFbEqW5oIFZp4buFbiENCiAgICAgIFsrXSBDaMO6bmcgVMO0aSBLaMO0bmcgTmjhuq1uIEjhu5cgVHLhu6MgTmjhu69uZyBNw6MgTmd14buTbiBNaeG7hW4gUGjDrSwgWGluIMSQ4burbmcgQuG6o28gVsOsIFNhby4gVOG6oW8gVGlja2V0IEjhu5cgVHLhu6MgQ+G7p2EgV2Vic2l0ZSBU4bqhaTogaHR0cHM6Ly9yb3NpZXRlYW0ubmV0L2Rhc2gvdGlja2V0DQogICAgICBbK10gIE7hur91IELhuqFuIEVkaXQgU291cmNlIFbDoCBVcCBXZWIgU2hhcmUgTmjhu5sgT2JmdXNjYXRlIFNjcmlwdC4gTuG6v3UgQuG6oW4gQ8OzIFRp4buBbiBUaMOsIFPhu60gROG7pW5nOiBMdXJhLlBoLCBMdWFybW9yLk5ldCB8IE7hur91IELhuqFuIEtow7RuZyBDw7MgVGnhu4FuIFRow6wgRMO5bmc6IGx1YW9iZnVzY2F0ZS5jb20sIE1vb25TZWMsIDc3RnVzY2F0ZSwuLi4gTmjDqSENCl1d"local n=a(m)warn(n)
 --// Check Material
 function MaterialMon()
 if SelectMaterial == "Radioactive Material" then
@@ -2519,10 +2535,10 @@ function to(p)
     ToggleUIButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
     ToggleUIButton.Position = UDim2.new(0.159199998, 0, 0.25920248, 0)
     ToggleUIButton.Size = UDim2.new(0, 70, 0, 70)
-    ToggleUIButton.Font = Enum.Font.IndieFlower
+    ToggleUIButton.Font = Enum.Font.PermanentMarker
     ToggleUIButton.Text = "open"
     ToggleUIButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-    ToggleUIButton.TextSize = 41.000
+    ToggleUIButton.TextSize = 37.000
     ToggleUIButton.TextWrapped = true
     ToggleUIButton.Visible = true
 
@@ -2823,17 +2839,7 @@ local DropdownSelectWeapon = Tabs.Main:AddDropdown("DropdownSelectWeapon", {
         end)
 
 
---// auto chest
-
-Tabs.Main:AddButton({
-    Title = "Auto Chest",
-    Description = "Nhặt rương",
-    Callback = function()
-        getgenv().JoinTeam = "Pirates"
-        getgenv().Stop_If_Has_Items = true
-        loadstring(game:HttpGet("https://github.com/PNguyen0199/Script/raw/main/Trash_Auto_Chest.lua"))()
-    end
-})
+--// nhớ có code farm chest thì thêm
 
       Tabs.Main:AddButton({
         Title = "Redeem All Code",
@@ -5154,6 +5160,103 @@ Callback = function(value)
     game:GetService("Players")["LocalPlayer"].Data.Stats.Gun.Level.Value = tonumber(value)
 end
 })
+
+Tabs.Ad:AddButton({
+	Title = "Tool tp",
+	Description = "",
+	Callback = function()
+        local plr = game:GetService("Players").LocalPlayer
+        local mouse = plr:GetMouse()
+        local tool = Instance.new("Tool")
+        tool.RequiresHandle = false
+        tool.Name = "Teleport Tool"
+        tool.Activated:Connect(function()
+        local root = plr.Character.HumanoidRootPart
+        local pos = mouse.Hit.Position+Vector3.new(0,2.5,0)
+        local offset = pos-root.Position
+        root.CFrame = root.CFrame+offset
+        end)
+        tool.Parent = plr.Backpack
+	end
+})
+
+spawn(function()
+		while wait() do
+			if RainbowHaki then
+				pcall(function()
+					if game.Players.LocalPlayer.Character.HasBuso then
+						for i,v in pairs(game.Players.LocalPlayer.Character.Humanoid:GetChildren()) do
+							if v.Name == "RightLowerArm_BusoLayer1" or v.Name == "RightLowerArm_BusoLayer2" or v.Name == "RightHand_BusoLayer1" or v.Name == "RightHand_BusoLayer2" or v.Name == "LeftLowerArm_BusoLayer1" or v.Name == "LeftLowerArm_BusoLayer2" or v.Name == "LeftHand_BusoLayer1" or v.Name == "LeftHand_BusoLayer2" or v.Name == "LeftHand_BusoLayer1" or v.Name == "RightUpperArm_BusoLayer1" or v.Name == "RightUpperArm_BusoLayer2" or v.Name == "LeftUpperArm_BusoLayer1" or v.Name == "LeftUpperArm_BusoLayer2" or v.Name == "UpperTorso_BusoLayer1" or v.Name == "UpperTorso_BusoLayer2" or v.Name == "LowerTorso_BusoLayer1" or v.Name == "LowerTorso_BusoLayer2" or v.Name == "Head_BusoLayer1" or v.Name == "Head_BusoLayer2" or v.Name == "RightUpperLeg_BusoLayer1" or v.Name == "RightUpperLeg_BusoLayer2" or v.Name == "LeftUpperLeg_BusoLayer1" or v.Name == "LeftUpperLeg_BusoLayer2" or v.Name == "RightLowerLeg_BusoLayer1" or v.Name == "RightLowerLeg_BusoLayer2" or v.Name == "LeftLowerLeg_BusoLayer1" or v.Name == "LeftLowerLeg_BusoLayer2" or v.Name == "LeftFoot_BusoLayer1" or v.Name == "LeftFoot_BusoLayer2" or v.Name == "RightFoot_BusoLayer1" or v.Name == "RightFoot_BusoLayer2" then
+								v.Color = Color3.fromHSV(tick() * 24 % 255/255, 1, 1)
+							end
+						end
+					end
+				end)
+			end
+		end
+	end)
+
+local Toggle = Tabs.Ad:AddToggle("MyToggle", {Title = "Rainbow haki", Default = false })
+
+    Toggle:OnChanged(function(value)
+   RainbowHaki = value
+    end)
+
+    Options.MyToggle:SetValue(false) 
+    
+local Toggle = Tabs.Ad:AddToggle("MyToggle", {Title = "Rainbow yoru", Default = false })
+
+    Toggle:OnChanged(function(value)
+   RainbowYoru = value
+    end)
+
+    Options.MyToggle:SetValue(false) 
+
+spawn(function()
+		while wait() do
+			if RainbowYoru then
+				pcall(function()
+					for i,v in pairs(game.Players.LocalPlayer.Character.DarkBlade.Right:GetChildren()) do
+						if v.Name == "Runes" or v.Name == "Hold" or v.Name == "Bottom" or v.Name == "Gems" or v.Name == "Wings" or v.Name == "Blade" or v.Name == "Tape" then
+							v.Color = Color3.fromHSV(tick() * 24 % 255/255, 1, 1)
+							v.Material = "Neon"
+						end
+
+					end
+				end)
+			end
+		end
+	end)
+
+	spawn(function()
+		while wait(1) do
+			if RainbowYoru then
+				pcall(function()
+					for i,v in pairs(game.Players.LocalPlayer.Character.DarkBlade.Right.Handle:GetChildren()) do
+						if v.Name == "Trail" then
+							v.LightEmission = 1
+						end
+
+					end
+				end)
+			end
+		end
+	end)
+
+	spawn(function()
+		while wait(1) do
+			if RainbowYoru then
+				pcall(function()
+					for i,v in pairs(game.Players.LocalPlayer.Character.DarkBlade.Right.Handle.Attachment0:GetChildren()) do
+						if v.Name == "Beam" then
+							v.LightEmission = 1 v.Texture = 0 v.Width0 = 0 v.Width1 = 0
+						end
+
+					end
+				end)
+			end
+		end
+	end)
 --------------------------------------------------------------------------------------------------------------------------------------------
 --Setting
 local BypassACToggle = Tabs.Setting:AddToggle("BypassAC_Toggle", {Title = "Ngăn chặn ban", Default = true })
