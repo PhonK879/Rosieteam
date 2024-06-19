@@ -2191,6 +2191,30 @@ function toTargetP(CFgo)
 	return tweenfunc
 end
 
+    function topos(Pos)
+        Distance = (Pos.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+        if Distance < 25 then
+            Speed = 300
+        elseif Distance < 50 then
+            Speed = 300
+        elseif Distance < 150 then
+            Speed = 300
+        elseif Distance < 250 then
+            Speed = 300
+        elseif Distance < 500 then
+            Speed = 300
+        elseif Distance < 750 then
+            Speed = 300
+        elseif Distance >= 1000 then
+            Speed = 300
+        end
+        game:GetService("TweenService"):Create(
+            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
+            TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear),
+            {CFrame = Pos}
+        ):Play()
+end
+
     function StopTween(target)
         if not target then
             _G.StopTween = true
@@ -7168,7 +7192,7 @@ spawn(function()
                     if _G.TargTrial ~= nil then
                         topos(_G.TargTrial.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,5))
                         AutoHaki()
-                        EquipWeapon(_G.SelectWeapon)
+                        EquipTool(SelectWeapon)
                         Click()
                     end
                 until not KillPlayer or not v.Parent or v.Humanoid.Health <= 0 
