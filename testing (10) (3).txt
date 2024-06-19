@@ -13,17 +13,17 @@
 [+] Chúng Tôi Không Nhận Hỗ Trợ Những Mã Nguồn Miễn Phí, Xin Đừng Bảo Vì Sao. Tạo Ticket Hỗ Trợ Của Website Tại: https://rosieteam.net/dash/ticket
 [+] Nếu Bạn Edit Source Và Up Web Share Nhớ Obfuscate Script. Nếu Bạn Có Tiền Thì Sử Dụng: Lura.Ph, Luarmor.Net | Nếu Bạn Không Có Tiền Thì Dùng: luaobfuscate.com, MoonSec, 77Fuscate,... Nhé!
 ]]
-local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/HieuFloBantumlum197/RosieTeam/main/Library.lua%20(6).txt"))()
+local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/vinhuchi/rblx/main/FixedFluent.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 ----------------------------------------------------------------------------------------------------------------------------------------------
 local Window = Fluent:CreateWindow({
-    Title = "RosieTeam Hub",
-    SubTitle = "Skid (source ở trên web rosieteam)",
+    Title = "Skid Hub",
+    SubTitle = "Verison Skid",
     TabWidth = 155,
     Size = UDim2.fromOffset(500, 320),
     Acrylic = true,
-    Theme = "Black",
+    Theme = "Dark",
     MinimizeKey = Enum.KeyCode.LeftControl
 })
 local Tabs = {
