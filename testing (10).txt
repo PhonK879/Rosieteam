@@ -68,12 +68,7 @@ function AntiBan()
     end
     AntiBan()
 --------------------------------------------------------------------------------------------------------------------------------------------
---// Anti AFK
-game:GetService("Players").LocalPlayer.Idled:connect(function()
-	game:GetService("VirtualUser"):Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-	wait(1)
-	game:GetService("VirtualUser"):Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-end)
+local VirtualUser=game:service'VirtualUser' game:service'Players'.LocalPlayer.Idled:connect(function() VirtualUser:CaptureController() VirtualUser:ClickButton2(Vector2.new()) end)
 -------------// BLOX FRUIT
 --// Sea World
 First_Sea = false
