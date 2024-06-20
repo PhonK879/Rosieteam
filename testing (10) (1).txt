@@ -7155,6 +7155,87 @@ task.spawn(function()
     end
 end)
 
+spawn(function()
+    while task.wait() do
+        if chodienspamhirimixienchetcuchungmay then
+            EBuso()
+            sword = checkskillSword()
+            meele = checkskillMelee()
+            df = checkskillDF()
+            gun = checkskillGun()
+            if df and SpamDFs and not string.find(game:GetService("Players").LocalPlayer.Data.DevilFruit.Value, "Portal") and df ~= "F" then
+                print("Spam Status: Devil Fruit")
+                EquipWeaponName(game:GetService("Players").LocalPlayer.Data.DevilFruit.Value)
+                local condimebeo = checkskillDF()
+                if condimebeo then
+                    SendKeyEvents(condimebeo)
+                end
+            elseif checkskillMelee() and SpamMelees then
+                print("Spam Status: Melee")
+                EquipWeaponName(NameMelee())
+                local condimebeo = checkskillMelee()
+                if condimebeo then
+                    SendKeyEvents(condimebeo)
+                end
+            elseif checkskillSword() and SpamSwords then
+                print("Spam Status: Sword")
+                EquipWeaponName(NameSword())
+                local condimebeo = checkskillSword()
+                if condimebeo then
+                    SendKeyEvents(condimebeo)
+                end
+            elseif checkskillGun() and SpamGuns then
+                print("Spam Status: Gun")
+                local condimebeo = checkskillGun()
+                EquipWeaponName(NameGun())
+                if condimebeo then
+                    SendKeyEvents(condimebeo)
+                end
+            else
+                EquipAllWeapon()
+            end
+        end
+    end
+end)
+
+local Section = Tabs.Race:AddSection("Spam Skill")
+
+local Toggle = Tabs.Race:AddToggle("Toggle", {
+    Title = "Spam Melee",
+    Description = "", 
+    Default = false })
+    Toggle:OnChanged(function(Value)
+        SpamMelees = Value
+end)
+Options.Toggle:SetValue(false)
+
+local Toggle = Tabs.Race:AddToggle("Toggle", {
+    Title = "Spam Sword",
+    Description = "", 
+    Default = false })
+    Toggle:OnChanged(function(Value)
+        SpamSwords = Value
+end)
+Options.Toggle:SetValue(false)
+
+local Toggle = Tabs.Race:AddToggle("Toggle", {
+    Title = "Spam Gun",
+    Description = "", 
+    Default = false })
+    Toggle:OnChanged(function(Value)
+        SpamGuns = Value
+end)
+Options.Toggle:SetValue(false)
+
+local Toggle = Tabs.Race:AddToggle("Toggle", {
+    Title = "Spam Devil Fruit",
+    Description = "", 
+    Default = false })
+    Toggle:OnChanged(function(Value)
+        SpamDFs = Value
+end)
+Options.Toggle:SetValue(false)
+
 local Mastery = Tabs.Race:AddSection("Auto Train")
 
 local ToggleAutoAcientQuest = Tabs.Race:AddToggle("ToggleAutoAcientQuest", {Title = "Auto Train",Description = "cày + bật tộc", Default = false })
